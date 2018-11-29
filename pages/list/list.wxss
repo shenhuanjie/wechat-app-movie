@@ -36,7 +36,8 @@
   flex: 1;
 }
 
-.item .meta .title, .item .meta .sub-title {
+.item .meta .title,
+.item .meta .sub-title {
   display: block;
   margin-bottom: 15rpx;
 }
@@ -74,6 +75,7 @@
   margin-right: 20rpx;
 }
 
-.tips image, .tips text {
+.tips image,
+.tips text {
   vertical-align: middle;
 }

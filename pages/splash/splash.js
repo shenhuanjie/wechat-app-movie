@@ -11,7 +11,7 @@ Page({
   /**
    * 生命周期函数--监听页面加载
    */
-  onLoad: function(options) {
+  onLoad: function (options) {
     const _this = this;
     // 请求数据
     wx.request({
@@ -20,7 +20,7 @@ Page({
       header: {
         'content-type': 'json' // 默认值
       },
-      success: function(res) {
+      success: function (res) {
         const data = res.data.subjects.slice(0, 3);
         // console.log(data);
         _this.setData({
@@ -30,7 +30,7 @@ Page({
     })
   },
   // 事件绑定函数
-  start: function() {
+  start: function () {
     // 重定向
     wx.redirectTo({
       url: '../board/board'
